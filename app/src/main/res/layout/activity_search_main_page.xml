@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.SearchMainPage">
+
+    <Button
+        android:id="@+id/Search_searchbtn"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:background="#8000BCD4"
+        android:paddingTop="200dp"
+        android:text="Search"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/Search_requestbtn"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:background="#99FFEB3B"
+        android:paddingTop="200dp"
+        android:text="Request"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="256dp"
+        android:layout_height="236dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/Search_searchbtn"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/Search_searchbtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="241dp"
+        android:layout_height="176dp"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/Search_requestbtn"
+        app:layout_constraintTop_toTopOf="@+id/Search_requestbtn"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">FYP2</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_current_location">Map</string>
+    <string name="title_activity_display_maps">Map</string>
+    <string name="title_activity_seach_request_information">Map</string>
+    <string name="title_activity_request_display_maps">Map</string>
+</resources>

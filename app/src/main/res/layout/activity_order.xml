@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".order.order">
+
+    <Button
+        android:id="@+id/order_search"
+        android:layout_width="183dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:background="#8A00BCD4"
+        android:paddingTop="120dp"
+        android:text="Search Order"
+        android:textColor="#B2000000"
+        app:layout_constraintEnd_toStartOf="@+id/order_request"
+        app:layout_constraintHorizontal_bias="0.368"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/order_upload"
+        android:layout_width="183dp"
+        android:layout_height="253dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="112dp"
+        android:background="#7A8BC34A"
+        android:paddingTop="120dp"
+        android:text="Upload Record"
+        android:textColor="#B2000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/order_help"
+        app:layout_constraintHorizontal_bias="0.478"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/order_search"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/order_help"
+        android:layout_width="183dp"
+        android:layout_height="253dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="112dp"
+        android:background="#95E91E63"
+        android:paddingTop="120dp"
+        android:text="Help Record"
+        android:textColor="#B2000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_upload"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/order_request"
+        android:layout_width="183dp"
+        android:layout_height="253dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:background="#8AFFEB3B"
+        android:paddingTop="120dp"
+        android:text="Request Record"
+        android:textColor="#B2000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/order_search" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="123dp"
+        android:layout_height="131dp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_search"
+        app:layout_constraintEnd_toEndOf="@+id/order_search"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="@+id/order_search"
+        app:layout_constraintTop_toTopOf="@+id/order_search"
+        app:layout_constraintVertical_bias="0.344"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="154dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_request"
+        app:layout_constraintEnd_toEndOf="@+id/order_request"
+        app:layout_constraintHorizontal_bias="0.62"
+        app:layout_constraintStart_toStartOf="@+id/order_request"
+        app:layout_constraintTop_toTopOf="@+id/order_request"
+        app:layout_constraintVertical_bias="0.266"
+        app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="154dp"
+        android:layout_height="144dp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_upload"
+        app:layout_constraintEnd_toEndOf="@+id/order_upload"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="@+id/order_upload"
+        app:layout_constraintTop_toTopOf="@+id/order_upload"
+        app:layout_constraintVertical_bias="0.311"
+        app:srcCompat="@android:drawable/ic_menu_upload" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="147dp"
+        android:layout_height="134dp"
+        app:layout_constraintBottom_toBottomOf="@+id/order_help"
+        app:layout_constraintEnd_toEndOf="@+id/order_help"
+        app:layout_constraintStart_toStartOf="@+id/order_help"
+        app:layout_constraintTop_toTopOf="@+id/order_help"
+        app:layout_constraintVertical_bias="0.285"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Order Record"
+        android:textColor="#F0000000"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

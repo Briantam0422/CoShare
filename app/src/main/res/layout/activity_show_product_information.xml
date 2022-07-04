@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MAP.ShowProductInformation">
+
+    <TextView
+        android:id="@+id/show_product_name"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/show_product_description"
+        android:layout_width="222dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/show_exchange_condition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/show_exchange"
+        app:layout_constraintTop_toTopOf="@+id/show_exchange" />
+
+    <TextView
+        android:id="@+id/show_delivery_service"
+        android:layout_width="367dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:paddingLeft="10dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/show_delivery"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/show_delivery"
+        app:layout_constraintTop_toTopOf="@+id/show_delivery" />
+
+    <TextView
+        android:id="@+id/show_Provider_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/usernametext"
+        app:layout_constraintTop_toTopOf="@+id/usernametext" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Show_Product_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView9"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginRight="92dp"
+        android:paddingLeft="10dp"
+        android:text="Product Name : "
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/Show_Product_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:paddingLeft="10dp"
+        android:text="Product Description :"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="@+id/show_product_name"
+        app:layout_constraintTop_toBottomOf="@+id/show_product_name" />
+
+    <TextView
+        android:id="@+id/show_exchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="28dp"
+        android:paddingLeft="10dp"
+        android:text="Exchange  : "
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_product_description" />
+
+    <TextView
+        android:id="@+id/show_delivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="10dp"
+        android:text="Delivery Service : "
+        android:textColor="@android:color/black"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/show_exchange"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/show_exchange"
+        app:layout_constraintTop_toBottomOf="@+id/show_exchange" />
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="10dp"
+        android:text="Provider :"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/show_Backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_delivery"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <Button
+        android:id="@+id/show_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:text="Interested"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toEndOf="@+id/show_Backbtn"
+        app:layout_constraintTop_toTopOf="@+id/show_Backbtn" />
+
+    <Button
+        android:id="@+id/show_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/show_interested"
+        app:layout_constraintTop_toTopOf="@+id/show_interested" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

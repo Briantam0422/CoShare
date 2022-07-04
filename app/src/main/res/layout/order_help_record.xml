@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#95E91E63">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offer Help Record"
+            android:textColor="#D0000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#31E91E63">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/orderHelp_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="24dp"
+            app:civ_border_width="2dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/orderHelp_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Product Name"
+            android:textColor="#1A1818"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/orderHelp_image"
+            app:layout_constraintTop_toTopOf="@+id/orderHelp_image" />
+
+        <TextView
+            android:id="@+id/orderHelp_productDesciption"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Product Description"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/orderHelp_productName"
+            app:layout_constraintTop_toBottomOf="@+id/orderHelp_productName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search.ShowRequestProductInformation">
+
+    <TextView
+        android:id="@+id/show_request_product_name"
+        android:layout_width="222dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:paddingLeft="10dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView9"
+        app:layout_constraintStart_toEndOf="@+id/textView9"
+        app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/show_request_product_description"
+        android:layout_width="361dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="10dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView10"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView10"
+        app:layout_constraintTop_toTopOf="@+id/textView10" />
+
+    <TextView
+        android:id="@+id/show_request_Provider_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/usernametext"
+        app:layout_constraintTop_toTopOf="@+id/usernametext" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Show_Request_Product_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="244dp"
+        android:layout_marginRight="244dp"
+        android:paddingLeft="10dp"
+        android:text="Product Name : "
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toEndOf="@+id/Show_Product_image"
+        app:layout_constraintTop_toBottomOf="@+id/Show_Request_Product_image" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:paddingLeft="10dp"
+        android:text="Product Description :"
+        android:textColor="@android:color/black"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toStartOf="@+id/show_request_product_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView9"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <TextView
+        android:id="@+id/usernametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="16dp"
+        android:paddingLeft="10dp"
+        android:text="Requester :"
+        android:textColor="@android:color/black"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/show_request_Backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/show_request_product_description"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/show_request_product_description"
+        app:layout_constraintVertical_bias="0.086" />
+
+    <Button
+        android:id="@+id/show_request_interested"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Content Requester"
+        app:layout_constraintStart_toEndOf="@+id/show_request_Backbtn"
+        app:layout_constraintTop_toTopOf="@+id/show_request_Backbtn" />
+
+    <Button
+        android:id="@+id/show_request_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="Offer Help"
+        app:layout_constraintStart_toEndOf="@+id/show_request_interested"
+        app:layout_constraintTop_toTopOf="@+id/show_request_interested" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

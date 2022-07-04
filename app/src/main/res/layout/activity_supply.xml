@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Supply.supplyActivity">
+
+    <Button
+        android:id="@+id/offerHelp_button_Supply"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:layout_marginTop="8dp"
+        android:background="#6DE91E63"
+        android:paddingTop="200dp"
+        android:text="Offer Help"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Upload_button_Supply" />
+
+    <Button
+        android:id="@+id/Upload_button_Supply"
+        android:layout_width="0dp"
+        android:layout_height="326dp"
+        android:background="#8AFFEB3B"
+        android:paddingTop="200dp"
+        android:text="Upload Product"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="234dp"
+        android:layout_height="191dp"
+        android:layout_marginTop="68dp"
+        app:layout_constraintEnd_toEndOf="@+id/Upload_button_Supply"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Upload_button_Supply"
+        app:srcCompat="@android:drawable/ic_menu_upload_you_tube" />
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="215dp"
+        android:layout_height="205dp"
+        android:layout_marginTop="48dp"
+        app:layout_constraintEnd_toEndOf="@+id/offerHelp_button_Supply"
+        app:layout_constraintHorizontal_bias="0.566"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/offerHelp_button_Supply"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

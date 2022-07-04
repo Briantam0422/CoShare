@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:background="#6D4EC34A">
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upload Record"
+            android:textColor="#D0000000"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="#7A8BC34A">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_record_image"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/request_record_productName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Product Name"
+            android:textColor="#1A1818"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/request_record_image"
+            app:layout_constraintTop_toTopOf="@+id/request_record_image" />
+
+        <TextView
+            android:id="@+id/request_record_productDesciption"
+            android:layout_width="143dp"
+            android:layout_height="wrap_content"
+            android:text="Product Description"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/request_record_productName"
+            app:layout_constraintTop_toBottomOf="@+id/request_record_productName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

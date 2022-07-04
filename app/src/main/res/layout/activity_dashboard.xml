@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity">
+
+
+    <Button
+        android:id="@+id/Search_Button_Dashboard"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="#9403F447"
+        android:paddingTop="100dp"
+        android:text="Search"
+        app:layout_constraintEnd_toStartOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2_dashboard_text" />
+
+    <Button
+        android:id="@+id/chat_Button_Dashboard"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="5dp"
+        android:background="#9CFF9800"
+        android:paddingTop="100dp"
+        android:text="Chat Record"
+        app:layout_constraintEnd_toEndOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/Search_Button_Dashboard" />
+
+    <Button
+        android:id="@+id/account_Button_Dashboard3"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:background="#90FFEB3B"
+        android:paddingTop="100dp"
+        android:text="Account"
+        app:layout_constraintEnd_toEndOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintTop_toTopOf="@+id/setting_Button_Dashboard4" />
+
+    <Button
+        android:id="@+id/order_Button_Dashboard2"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="5dp"
+        android:background="#8B9C27B0"
+        android:paddingTop="100dp"
+        android:text="Order Record"
+        app:layout_constraintEnd_toEndOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintStart_toStartOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintTop_toBottomOf="@+id/Supply_Button_Dashboard" />
+
+    <Button
+        android:id="@+id/setting_Button_Dashboard4"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginTop="5dp"
+        android:background="#8F2196F3"
+        android:paddingTop="100dp"
+        android:text="Setting"
+        app:layout_constraintEnd_toEndOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintStart_toStartOf="@+id/order_Button_Dashboard2"
+        app:layout_constraintTop_toBottomOf="@+id/order_Button_Dashboard2" />
+
+    <Button
+        android:id="@+id/Supply_Button_Dashboard"
+        android:layout_width="195dp"
+        android:layout_height="149dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#973F51B5"
+        android:paddingTop="100dp"
+        android:text="Supply"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Search_Button_Dashboard" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_dashboard_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+    <TextView
+        android:id="@+id/textView2_dashboard_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/image_dashboard_image"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="@+id/image_dashboard_image"
+        app:layout_constraintTop_toBottomOf="@+id/image_dashboard_image" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="102dp"
+        android:layout_height="107dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="@+id/Search_Button_Dashboard"
+        app:layout_constraintTop_toTopOf="@+id/Search_Button_Dashboard"
+        app:srcCompat="@android:drawable/ic_search_category_default" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintEnd_toEndOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="0.755"
+        app:layout_constraintStart_toStartOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintTop_toTopOf="@+id/Supply_Button_Dashboard"
+        app:layout_constraintVertical_bias="0.326"
+        app:srcCompat="@android:drawable/ic_menu_myplaces" />
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="138dp"
+        android:layout_height="112dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/chat_Button_Dashboard"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/chat_Button_Dashboard"
+        app:layout_constraintTop_toTopOf="@+id/chat_Button_Dashboard"
+        app:srcCompat="@android:drawable/sym_action_chat" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="106dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/order_Button_Dashboard2"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/order_Button_Dashboard2"
+        app:layout_constraintTop_toTopOf="@+id/order_Button_Dashboard2"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/account_Button_Dashboard3"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="@+id/account_Button_Dashboard3"
+        app:layout_constraintTop_toTopOf="@+id/account_Button_Dashboard3"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="107dp"
+        android:layout_height="102dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="@+id/setting_Button_Dashboard4"
+        app:layout_constraintHorizontal_bias="0.534"
+        app:layout_constraintStart_toStartOf="@+id/setting_Button_Dashboard4"
+        app:layout_constraintTop_toTopOf="@+id/setting_Button_Dashboard4"
+        app:srcCompat="@android:drawable/ic_menu_preferences" />
+
+    <TextView
+        android:id="@+id/signout_dashboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="SIGN OUT"
+        android:textColor="#AB000000"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toEndOf="@+id/image_dashboard_image"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
